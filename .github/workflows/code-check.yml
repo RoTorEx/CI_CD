@@ -3,14 +3,16 @@ name: Code check
 on:
   push:
     branches:
-      - main
+      - master
       - develop
       - release/*
+      - feature
   pull_request:
     branches:
-      - main
+      - master
       - develop
       - release/*
+      - feature
 
 jobs:
   build:
